@@ -1,19 +1,23 @@
 {
     "name": "gamewisp/are-you-a-human",
-    "description": "Are You A Human Autoloading Implementation",
+    "description": "Are You A Human Laravel 4 Implementation",
     "authors": [
         {
             "name": "Michael Anderson",
-            "email": "michael@gamewisp.com"
+            "email": "info@gamewisp.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=5.3.0",
+        "illuminate/support": "4.1.*"
     },
     "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
         "psr-0": {
-            "AYAH": "src/"
+            "Gamewisp\\AreYouAHuman\\": "src/"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
